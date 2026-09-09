@@ -229,7 +229,7 @@ code {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: calc(64px + 3rem);
+  padding-top: calc(64px + 5rem);
   padding-bottom: 4rem;
   min-height: 500px;
   gap: 3rem;
@@ -751,6 +751,16 @@ code {
 
 .footer-copyright { font-size: 0.8125rem; color: var(--fg-faint); }
 
+.footer-credit-link {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+.footer-credit-link:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
 /* ─── Responsive ────────────────────────────────────────────────────── */
 
 @media (max-width: 960px) {
@@ -765,7 +775,8 @@ code {
 
 @media (max-width: 640px) {
   .site-nav         { display: none; }
-  .footer-grid      { grid-template-columns: 1fr; }
+  .footer-grid      { grid-template-columns: 1fr 1fr; gap: 2rem 1.5rem; }
+  .footer-grid > div:first-child { grid-column: 1 / -1; }
   .hero-heading     { font-size: 2rem; }
   .portfolio-section { padding-block: 3.5rem; }
 }

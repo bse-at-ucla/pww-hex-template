@@ -10,7 +10,7 @@ export function Footer() {
         <div className="footer-grid">
           {/* Brand column */}
           <div>
-            <Link href="/" className="footer-logo" aria-label={`${PERSON.fullName} — home`}>
+            <Link href="#top" className="footer-logo" aria-label={`${PERSON.fullName} — scroll to top`}>
               <span style={{ color: 'var(--accent)', marginRight: '0.35em' }}>&gt;</span>
               {PERSON.fullName}
             </Link>
@@ -54,7 +54,16 @@ export function Footer() {
 
         <div className="footer-bottom">
           <p className="footer-copyright">
-            &copy; {year} {PERSON.fullName}. Designed by Bruin Software Engineers.
+            &copy; {year} {PERSON.fullName}. Designed by{' '}
+            <a
+              href="https://bseatucla.com"
+              className="footer-credit-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Bruin Software Engineers
+            </a>
+            .
           </p>
         </div>
       </div>

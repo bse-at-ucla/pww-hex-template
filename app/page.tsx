@@ -8,7 +8,7 @@ import { SECTIONS } from '@/config/design';
 
 export default function Home() {
   return (
-    <div className="page-wrapper">
+    <div id="top" className="page-wrapper">
       <Header />
       <HeroSection />
       <main className="main-content">

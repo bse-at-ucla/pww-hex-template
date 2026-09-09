@@ -20,7 +20,7 @@ export function Header() {
   return (
     <header className={`site-header${scrolled ? ' header-scrolled' : ''}`}>
       <div className="content-container">
-        <Link href="/" className="site-logo" aria-label={`${PERSON.fullName} — home`}>
+        <Link href="#top" className="site-logo" aria-label={`${PERSON.fullName} — scroll to top`}>
           <span className="logo-prefix" aria-hidden="true">&gt;</span>
           {PERSON.fullName}
         </Link>
